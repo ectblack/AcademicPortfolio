@@ -1,0 +1,54 @@
+Problem Statement:
+Create a basic budget tracker that allows users to add income and expenses, calculates the remaining budget, and displays a simple summary.
+
+Nouns and Verbs:
+- Nouns: User, Income, Expense, Budget
+- Verbs: Add, Calculate, Display
+
+Defining Diagram:
+- Inputs: User input for income and expenses
+- Processes: Calculating remaining budget
+- Outputs: Displaying total income, total expenses, remaining budget
+
+
+Solution Algorithm Pseudocode:
+// User runs the script
+
+// Prompt user to input income
+income = prompt("Enter Income (numerical value):");
+
+// Prompt user to input expenses
+expenses = prompt("Enter Expenses (numerical value):");
+
+// Calculate remaining budget by subtracting expenses from income
+remainingBudget = income - expenses;
+
+// Display the summary
+document.write("Total Income: " + income + "<br>");
+document.write("Total Expenses: " + expenses + "<br>");
+document.write("Remaining Budget: " + remainingBudget + "<br><br>");
+    
+    
+Test Plans:
+  Display Budget Summary Test
+  Input: 2000, 500
+  Expected Output: Display total income: 2000, total expenses: 500, remaining budget: 1500
+  Actual Output: Display total income: 2000, total expenses: 500, remaining budget: 1500
+  
+  Display Budget Summary Test
+  Input: 3000, 1000
+  Expected Output: Display total income: 3000, total expenses: 1000, remaining budget: 2000
+  Actual Output: Display total income: 3000, total expenses: 1000, remaining budget: 2000
+  
+  Display Budget Summary Test
+  Input: 1500, 700
+  Expected Output: Display total income: 1500, total expenses: 700, remaining budget: 800
+  Actual Output: Display total income: 1500, total expenses: 700, remaining budget: 800
+
+  Display Budget Summary Test
+  Input: 2500, 1200
+  Expected Output: Display total income: 2500, total expenses: 1200, remaining budget: 1300
+  Actual Output: Display total income: 2500, total expenses: 1200, remaining budget: 1300
+   
+   
+
